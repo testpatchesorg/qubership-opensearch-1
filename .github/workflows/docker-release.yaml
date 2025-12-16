@@ -87,6 +87,8 @@ jobs:
     name: "Create Release Tag"
     needs: [load-docker-build-components]
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: "Create Tag"
         uses: netcracker/qubership-workflow-hub/actions/tag-action@396774180000abdb825cbf150b56cc59c6913db8  # v2.0.5
