@@ -101,7 +101,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   docker-build:
-    name: "Docker Build and Publish"
+    name: "${{ matrix.component.name }}"
     needs: [load-docker-build-components, create-tag]
     permissions:
       contents: read
