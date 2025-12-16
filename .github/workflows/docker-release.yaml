@@ -11,7 +11,7 @@
 # - GitHub release drafter configuration file: `.github/release-drafter-config.yml`
 #   Example: config/examples/release-drafter-config.yml
 
-name: "Helm Charts Release"
+name: "Docker Images Release"
 on:
   workflow_dispatch:
     inputs:
